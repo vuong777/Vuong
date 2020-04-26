@@ -13,9 +13,7 @@ app.engine('hbs',engines.handlebars);
 app.set('views','./views');
 app.set('view engine','hbs');
 
-
 var productController = require('./product.js');
-
 app.use('/product',productController);
 
 const PORT = process.env.PORT || 3000;
